@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    margin: 50px auto;
+    background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg);
+    background-size: cover;
+
+}
+.parent::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+}
+.parent .container{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 4;
+}
+.parent .container .left{
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid #ddd;
+}
+.parent .container .right{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+.parent .container .right .top{
+    width: 100%;
+    height: 10%;
+    background-color: #afadad;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+    padding-left: 25px;
+    color: #777;
+    font-weight: bold;
+}
+.black{
+    color: #000;
+}
+.parent .container .right .line{
+    width: 90%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+.parent .container .right .date{
+    color: #afadad;
+        background-color: #fff;
+        width: 150px;
+        height: 40px;
+        padding: 5px;
+        text-transform: capitalize;
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+}
+.right .one{
+    width: 20%;
+    width: fit-content;
+        height: 5%;
+        color: #fff;
+        text-transform: capitalize;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+} 
+.right .two{
+        width: 20%;
+            width: fit-content;
+            height: 5%;
+            color: #fff;
+            text-transform: capitalize;
+            background-color: dodgerblue;
+            position: absolute;
+            left: 5%;
+            top: 57%;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+}
+.right .three{
+    background-color: #ddd;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 80%;
+    top: 64%;
+    width: fit-content;
+    height: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.right .four{
+background-color: #ddd;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 52%;
+    top: 71%;
+    width: fit-content;
+    height: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;   
+}
+.right .five{
+            width: 20%;
+                width: fit-content;
+                height: 5%;
+                color: #fff;
+                text-transform: capitalize;
+                background-color: dodgerblue;
+                position: absolute;
+                left: 5%;
+                top: 77%;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+}
+.right .bottom{
+    width: 90%;
+        height: 7%;
+        background-color: #ddd;
+        position: absolute;
+        left: 5%;
+        top: 90%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+.right .bottom .attach{
+    color: #777;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+    -webkit-transform: translateY(-50%) rotate(135deg);
+    -moz-transform: translateY(-50%) rotate(135deg);
+    -ms-transform: translateY(-50%) rotate(135deg);
+    -o-transform: translateY(-50%) rotate(135deg);
+}
+.right .bottom .emoji{
+        color: #777;
+        position: absolute;
+        left: 85%;
+        top: 50%;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+        -moz-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        -o-transform:translateY(-50%);
+        -webkit-transform: translateY(-50%) ;
+}
+.right .bottom .send{
+    color: #777;
+        position: absolute;
+        left: 92%;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+}
+.left #search{
+    width: 25%;
+        height: 7%;
+        background-color: #ddd;
+        border: 0;
+        position: absolute;
+        left: 4%;
+        top: 5%;
+        border-radius: 20px;
+        padding-left: 20px;
+}
+.left .edit{
+    width: 45px;
+        height: 45px;
+        border-radius: 550%;
+        -webkit-border-radius: 550%;
+        -moz-border-radius: 550%;
+        -ms-border-radius: 550%;
+        -o-border-radius: 550%;
+        position: absolute;
+        left: 32%;
+        top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: dodgerblue;
+        font-size: 25px;
+        padding-left: 5px;
+}
+.container .left .main{
+    width: 30%;
+        height: 60%;
+        position: absolute;
+        left: 5%;
+        top: 18%;
+        border-top: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.main > div{
+    width: 100%;
+    height: calc(100% / 5);
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.date{
+    position: absolute;
+        left: 85%;
+        top: 15%;
+}
+.foto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.name{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.text{
+position: absolute;
+        left: 26%;
+        top: 48%;
+        color: #777;
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+}
+.final{
+    width: 40%;
+        height: 10%;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 0;
+        top: 78%;
+}
+.final img{
+left: 15%;
+}
+.final{
+    color: #fff;
+}
+.final .date{
+    left: 80%;
+}
+.final .name{
+    left: 35%;
+}
+.final .text{
+    color: #fff;
+    left: 35%;
+}
